@@ -21,7 +21,7 @@ bot.on('ready', () => {
     console.log("Bot Ready !");
 });
 
-bot.login('NDEyNTk3NTA1Njc5ODE4NzUy.DWOKjg.7S87Gj6Dn_SuaK4KTj8alPji07k');
+bot.login('client.login(process.env.TOKEN);');
 
 bot.on("guildMemberAdd", member => {
     member.guild.channels.find("name", "general").send(`:rainbow: ${member.user.username} viens de nous rejoindre ! Bienvenue à lui :grinning: !`)
